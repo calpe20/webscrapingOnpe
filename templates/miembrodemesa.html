@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>LUGAR DE VOTACION</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css')}}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="title"><strong>¡... SEPA DONDE VOTAR ...!</strong></div>
+    <div id='subtitle'>
+        ELECCIONES REGIONALES Y MUNICIPALES 2014
+    </div>
+    <div id="formula">
+        {{ nombre }}
+    </div>
+    <div id='conten'>
+        {% for elector in data %}
+            <div id='inform'>{{ elector }}</div>
+        {% endfor %}
+    </div>
+    <div id='mensaje'>Desarrollado por: <a><strong>Angel Calderon Paredes</strong></a><br>
+        <a href='https://www.facebook.com/calderonparedes'><img src='http://fanpagelist.com/images/category/facebook.png'></a>
+        <a href='https://plus.google.com/u/0/117813149831140452271'><img src='http://www.collegeprospectnetwork.com/img/social/google_plus_24.png'></a>
+    </div>
+</body>

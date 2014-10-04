@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Simple Map</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <style>
+            html, body{
+                height: 100%;
+                margin: 0px;
+                padding: 0px
+            }
+        </style>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h2>Clientes por Vendedor:</h2>
+        <h5>Ubicados en Google Maps</h5>
+        <div class='table-responsive'>
+            <table class='table'>
+                <thead>
+                    <tr class='info'>
+                        <th>#</th>
+                        <th>CODIGO</th>
+                        <th>NOMBRES</th>
+                        <th>DNI</th>
+                        <th>RUC</th>
+                        <th>DIRECCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+            {% for clientes in data %}
+                <tr>
+                    <td>{{ clientes[0] }}</td>
+                    <td>{{ clientes[1] }}</td>
+                    <td>{{ clientes[2] }}</td>
+                    <td>{{ clientes[3] }}</td>
+                    <td>{{ clientes[4] }}</td>
+                    <td>{{ clientes[5] }}</td>
+                </tr>
+            {% endfor %}
+                <tbody>
+            </table>
+        </div>
+    </body>
+</html>

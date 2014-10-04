@@ -1,0 +1,55 @@
+html, body{
+    padding:0px;
+    margin:0px auto;
+}
+#title{
+	background-color: #88B4CD;
+	font-size: 1em;
+	text-align: center;
+	padding-top: 5px
+}
+#subtitle{
+	background-color: #88b4cd;
+	font-size: 0.8em;
+	text-align: center;
+	padding-bottom: 5px
+}
+#formulario{
+    background-color:#eee;
+	text-align: center;
+	width: 100%;
+	font-size: 0.9em;
+}
+#nombre{
+	text-align: center;
+	font-family: verdana;
+	background-color: #457895;
+	padding: 10px;
+}
+form, table{
+	font-size: 11px;
+	font-family: verdana
+}
+img{padding:2px;}
+#formula{
+    padding:5px;
+    text-align:center;
+}
+#inform{
+    padding:5px;
+    font-size:0.8em;
+    font-family:Verdana;
+text-align:center;
+}
+table{
+	width:100%;
+	border: 1px solid #c1c1c1;
+}
+#mensaje{
+	font-family: verdana;
+	font-size: 10px;
+	text-align: center;
+	background-color: #c4c4c4;
+	padding: 5px;
+	color: white;
+}
